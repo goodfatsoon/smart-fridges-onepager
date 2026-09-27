@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Fridges — Grab and go</title>
+<meta name="description" content="Gezond eten op werk, zonder wachtrij. Smart Fridges: grab and go.">
+<style>
+:root{--ink:#10221f;--mint:#c8f4df;--teal:#52cdb3;--green:#0d7b62;--soft:#f3f7f5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;color:var(--ink);background:#fff}
+.wrap{width:min(1160px,calc(100% - 40px));margin:auto}nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:18px;font-weight:700;letter-spacing:-.03em}.navcta,.btn{border:0;border-radius:999px;background:var(--ink);color:#fff;padding:14px 20px;text-decoration:none;font-weight:650}
+.hero{min-height:720px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:60px;padding:50px 0 90px}.eyebrow{font-size:14px;font-weight:700;color:var(--green);letter-spacing:.08em;text-transform:uppercase}.hero h1{font-size:clamp(64px,8vw,118px);line-height:.84;letter-spacing:-.075em;margin:18px 0 28px;font-weight:700}.hero p{font-size:22px;line-height:1.5;max-width:570px;color:#52615e}.actions{display:flex;gap:12px;margin-top:36px}.btn.secondary{background:var(--soft);color:var(--ink)}
+.visual{height:610px;border-radius:48px;background:linear-gradient(145deg,var(--mint),#eefcf6 52%,#c6efe9);position:relative;overflow:hidden;box-shadow:0 30px 80px #0d7b6220}
+.fridge{position:absolute;width:290px;height:500px;left:50%;top:55%;transform:translate(-50%,-50%);background:#fff;border-radius:20px;box-shadow:0 30px 60px #143b3330;padding:22px}
+.logo{font-size:15px;font-weight:700;margin-bottom:18px}.door{height:390px;border:5px solid #eef2f0;border-radius:12px;background:linear-gradient(180deg,#d9f7ed,#f8fffc);padding:34px 18px 12px}.shelf{height:58px;border-bottom:3px solid #b8ccc5;display:flex;align-items:flex-end;justify-content:space-around;padding-bottom:6px}.item{width:28px;height:35px;background:#fff;border-radius:5px 5px 3px 3px;box-shadow:0 3px 8px #18493d22}.item:nth-child(2){height:28px}.item:nth-child(3){height:40px}.qr{position:absolute;right:34px;top:72px;width:46px;height:46px;background:repeating-linear-gradient(45deg,#122 0 4px,#fff 4px 8px)}
+section{padding:110px 0}.kicker{color:var(--green);font-weight:700}.section-title{font-size:clamp(42px,5vw,72px);letter-spacing:-.055em;line-height:.95;max-width:760px;margin:14px 0 50px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{padding:28px;border-radius:28px;background:var(--soft);min-height:230px}.num{width:40px;height:40px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:700}.card h3{font-size:24px;margin:38px 0 10px}.card p{color:#66726f;line-height:1.5}
+.dark{background:var(--ink);color:#fff}.dark .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.dark p{color:#b9c9c5;font-size:20px;line-height:1.6}.pill{display:inline-block;background:#ffffff12;border:1px solid #ffffff20;border-radius:999px;padding:10px 14px;margin:5px}
+.cta{text-align:center;padding:140px 20px}.cta h2{font-size:clamp(52px,7vw,96px);letter-spacing:-.065em;line-height:.9;margin:0 auto 30px;max-width:900px}.cta p{font-size:20px;color:#66726f;margin-bottom:35px}footer{padding:35px 0 50px;border-top:1px solid #e7ecea;color:#75817e;font-size:14px}
+@media(max-width:800px){.wrap{width:min(100% - 28px,1160px)}nav{height:68px}.navcta{display:none}.hero{grid-template-columns:1fr;min-height:auto;padding:55px 0 70px;gap:45px}.hero h1{font-size:68px}.hero p{font-size:18px}.visual{height:500px;border-radius:32px}.fridge{transform:translate(-50%,-50%) scale(.82)}.steps{grid-template-columns:1fr 1fr}.dark .wrap{grid-template-columns:1fr;gap:25px}section{padding:80px 0}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}.actions{flex-direction:column}.btn{text-align:center}}
+</style></head>
+<body>
+<header class="wrap"><nav><div class="brand">Smart Fridges</div><a class="navcta" href="#contact">Voor locaties →</a></nav></header>
+<main>
+<section class="hero wrap">
+<div><div class="eyebrow">Slimmer eten op het werk</div><h1>Grab<br>and go.</h1><p>Vers eten en drinken binnen handbereik. Open de koelkast, pak wat je wilt en ga verder met je dag.</p><div class="actions"><a class="btn" href="#how">Zo werkt het</a><a class="btn secondary" href="#contact">Smart Fridge op locatie</a></div></div>
+<div class="visual"><div class="fridge"><div class="logo">Smart Fridges</div><div class="qr"></div><div class="door"><div class="shelf"><i class="item"></i><i class="item"></i><i class="item"></i></div><div class="shelf"><i class="item"></i><i class="item"></i><i class="item"></i></div><div class="shelf"><i class="item"></i><i class="item"></i><i class="item"></i></div><div class="shelf"><i class="item"></i><i class="item"></i><i class="item"></i></div><div class="shelf"><i class="item"></i><i class="item"></i><i class="item"></i></div></div></div></div>
+</section>
+<section id="how"><div class="wrap"><div class="kicker">Geen kassa. Geen wachtrij.</div><h2 class="section-title">Lunch pakken moet net zo makkelijk zijn als je koelkast thuis openen.</h2><div class="steps"><div class="card"><div class="num">1</div><h3>Scan</h3><p>Scan de QR-code en identificeer jezelf in de Smart Fridges-app.</p></div><div class="card"><div class="num">2</div><h3>Open</h3><p>De deur ontgrendelt zodra je account en betaalmethode gereed zijn.</p></div><div class="card"><div class="num">3</div><h3>Pak</h3><p>Kies je lunch, snack of drankje direct uit de koelkast.</p></div><div class="card"><div class="num">4</div><h3>Ga</h3><p>Sluit de deur. Je aankopen worden geregistreerd en afgerekend.</p></div></div></div></section>
+<section class="dark"><div class="wrap"><div><div class="kicker">Voor werkplekken & campussen</div><h2 class="section-title">Goede lunch, precies waar mensen zijn.</h2></div><div><p>Smart Fridges brengt een compacte, onbemande foodservice naar locaties waar een traditionele kantine niet logisch is. Geen rij, geen kassapersoneel en de hele dag beschikbaar.</p><div><span class="pill">24/7 beschikbaar</span><span class="pill">Compact</span><span class="pill">Cashless</span><span class="pill">Vers assortiment</span></div></div></div></section>
+<section id="contact" class="cta"><h2>Een Smart Fridge op jouw locatie?</h2><p>We zoeken locaties voor de volgende uitrol.</p><a class="btn" href="mailto:info@smartfridges.nl">Neem contact op →</a></section>
+</main>
+<footer><div class="wrap">© 2026 Smart Fridges · Rotterdam</div></footer>
+</body></html>
