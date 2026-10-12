@@ -1,6 +1,21 @@
 # Smart Fridges Onepager
 
-Static test onepager for Smart Fridges.
+Marketingwebsite voor Smart Fridges. De metamorfose van 12 oktober 2026 volgt de aangeleverde Square-stijl; zie `docs/square.md` en `docs/design-decisions.md`.
+
+## Inhoud en techniek
+
+- Bestaande inhoud behouden, met locatievoorbeelden, assortiment, FAQ en aanvraaghulp toegevoegd.
+- Buildless HTML/CSS/JavaScript; geen package-installatie nodig voor publicatie.
+- Drie nieuwe fotografische conceptvisuals, geoptimaliseerd als WebP. Afbeeldingen zijn geen bewijs van bestaande klantlocaties.
+- Lettertypen lokaal gehost: Inter Tight, Inter en DM Sans, met OFL-licenties in `assets/`.
+- De locatiecheck maakt een `mailto:` naar `info@smartfridges.nl`. De bezoeker verstuurt de e-mail zelf. De site slaat geen formuliergegevens op en toont geen onbewezen verzendbevestiging.
+- Geen analytics, tracking, cookies, testimonials of onbevestigde verkoopcijfers toegevoegd.
+
+## Verificatie, 12 oktober 2026
+
+Originele content, interne links, assets, labels, JavaScript-syntax en de aanvraaglogica zijn gecontroleerd. De DOM-test controleerde ook ongeldige invoer, voorselectie van locaties, aanpassen, veilige tekstweergave, mailto-encoding en de handmatige kopieerroute op HTTP. Er is geen e-mail verzonden.
+
+Visuele browser-QA was niet beschikbaar in de uitvoeromgeving. Desktop- en mobiele weergave zijn daarom nog niet met een browser geverifieerd. Het HTTP-adres was bereikbaar; HTTPS gaf vanuit de uitvoeromgeving een 502-fout. Hosting/DNS is niet aangepast.
 
 ## Preview
 Configured for GitHub Pages from the repository root.

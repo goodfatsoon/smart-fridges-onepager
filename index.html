@@ -1,33 +1,99 @@
 <!doctype html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Smart Fridges — Grab and go</title>
-<meta name="description" content="Gezond eten op werk, zonder wachtrij. Smart Fridges: grab and go.">
-<style>
-:root{--ink:#10221f;--mint:#c8f4df;--teal:#52cdb3;--green:#0d7b62;--soft:#f3f7f5}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;color:var(--ink);background:#fff}
-.wrap{width:min(1160px,calc(100% - 40px));margin:auto}nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:18px;font-weight:700;letter-spacing:-.03em}.navcta,.btn{border:0;border-radius:999px;background:var(--ink);color:#fff;padding:14px 20px;text-decoration:none;font-weight:650}
-.hero{min-height:720px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:60px;padding:50px 0 90px}.eyebrow{font-size:14px;font-weight:700;color:var(--green);letter-spacing:.08em;text-transform:uppercase}.hero h1{font-size:clamp(64px,8vw,118px);line-height:.84;letter-spacing:-.075em;margin:18px 0 28px;font-weight:700}.hero p{font-size:22px;line-height:1.5;max-width:570px;color:#52615e}.actions{display:flex;gap:12px;margin-top:36px}.btn.secondary{background:var(--soft);color:var(--ink)}
-.visual{height:610px;border-radius:48px;background:linear-gradient(145deg,var(--mint),#eefcf6 52%,#c6efe9);position:relative;overflow:hidden;box-shadow:0 30px 80px #0d7b6220}
-.fridge{position:absolute;width:290px;height:500px;left:50%;top:55%;transform:translate(-50%,-50%);background:#fff;border-radius:20px;box-shadow:0 30px 60px #143b3330;padding:22px}
-.logo{font-size:15px;font-weight:700;margin-bottom:18px}.door{height:390px;border:5px solid #eef2f0;border-radius:12px;background:linear-gradient(180deg,#d9f7ed,#f8fffc);padding:34px 18px 12px}.shelf{height:58px;border-bottom:3px solid #b8ccc5;display:flex;align-items:flex-end;justify-content:space-around;padding-bottom:6px}.item{width:28px;height:35px;background:#fff;border-radius:5px 5px 3px 3px;box-shadow:0 3px 8px #18493d22}.item:nth-child(2){height:28px}.item:nth-child(3){height:40px}.qr{position:absolute;right:34px;top:72px;width:46px;height:46px;background:repeating-linear-gradient(45deg,#122 0 4px,#fff 4px 8px)}
-section{padding:110px 0}.kicker{color:var(--green);font-weight:700}.section-title{font-size:clamp(42px,5vw,72px);letter-spacing:-.055em;line-height:.95;max-width:760px;margin:14px 0 50px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{padding:28px;border-radius:28px;background:var(--soft);min-height:230px}.num{width:40px;height:40px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:700}.card h3{font-size:24px;margin:38px 0 10px}.card p{color:#66726f;line-height:1.5}
-.dark{background:var(--ink);color:#fff}.dark .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.dark p{color:#b9c9c5;font-size:20px;line-height:1.6}.pill{display:inline-block;background:#ffffff12;border:1px solid #ffffff20;border-radius:999px;padding:10px 14px;margin:5px}
-.cta{text-align:center;padding:140px 20px}.cta h2{font-size:clamp(52px,7vw,96px);letter-spacing:-.065em;line-height:.9;margin:0 auto 30px;max-width:900px}.cta p{font-size:20px;color:#66726f;margin-bottom:35px}footer{padding:35px 0 50px;border-top:1px solid #e7ecea;color:#75817e;font-size:14px}
-@media(max-width:800px){.wrap{width:min(100% - 28px,1160px)}nav{height:68px}.navcta{display:none}.hero{grid-template-columns:1fr;min-height:auto;padding:55px 0 70px;gap:45px}.hero h1{font-size:68px}.hero p{font-size:18px}.visual{height:500px;border-radius:32px}.fridge{transform:translate(-50%,-50%) scale(.82)}.steps{grid-template-columns:1fr 1fr}.dark .wrap{grid-template-columns:1fr;gap:25px}section{padding:80px 0}}
-@media(max-width:520px){.steps{grid-template-columns:1fr}.actions{flex-direction:column}.btn{text-align:center}}
-.hero-photo{background:linear-gradient(145deg,#fff0ce,#c4f2e2);display:flex;align-items:center;justify-content:center;overflow:hidden}.hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 20%}@media(max-width:800px){.hero-photo{height:580px}.hero-photo img{object-position:center top}}</style></head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Smart Fridges — Grab and go. Verse lunch op jouw locatie.</title>
+  <meta name="description" content="Vers eten en drinken binnen handbereik. Ontdek Smart Fridges voor werkplekken, campussen en gedeelde gebouwen. Vraag een Smart Fridge voor jouw locatie aan.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="Smart Fridges — Grab and go.">
+  <meta property="og:description" content="Verse, voedzame lunch binnen handbereik. Een Smart Fridge op jouw locatie? Ontdek de mogelijkheden.">
+  <meta property="og:image" content="http://ontdek.smartfridges.nl/assets/fresh-lunch.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fridge-in-use.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
 <body>
-<header class="wrap"><nav><div class="brand">Smart Fridges</div><a class="navcta" href="#contact">Voor locaties →</a></nav></header>
-<main>
-<section class="hero wrap">
-<div><div class="eyebrow">Slimmer eten op het werk</div><h1>Grab<br>and go.</h1><p>Vers eten en drinken binnen handbereik.<br>Open de koelkast, pak wat je wilt en ga verder met je dag.</p><div class="actions"><a class="btn" href="#how">Zo werkt het</a><a class="btn secondary" href="#contact">Smart Fridge op locatie</a></div></div>
-<div class="visual hero-photo"><img src="smart-fridge-hero.webp" alt="Smart Fridges koelkast met verse lunches, fruit en dranken" loading="eager" fetchpriority="high"></div>
-</section>
-<section id="how"><div class="wrap"><div class="kicker">Geen kassa. Geen wachtrij.</div><h2 class="section-title">Lunch pakken moet net zo makkelijk zijn als je koelkast thuis openen.</h2><div class="steps"><div class="card"><div class="num">1</div><h3>Scan</h3><p>Scan de QR-code en identificeer jezelf in de Smart Fridges-app.</p></div><div class="card"><div class="num">2</div><h3>Open</h3><p>De deur ontgrendelt zodra je account en betaalmethode gereed zijn.</p></div><div class="card"><div class="num">3</div><h3>Pak</h3><p>Kies je lunch, snack of drankje direct uit de koelkast.</p></div><div class="card"><div class="num">4</div><h3>Ga</h3><p>Sluit de deur. Je aankopen worden geregistreerd en afgerekend.</p></div></div></div></section>
-<section class="dark"><div class="wrap"><div><div class="kicker">Voor werkplekken & campussen</div><h2 class="section-title">Goede lunch, precies waar mensen zijn.</h2></div><div><p>Smart Fridges brengt een compacte, onbemande foodservice naar locaties waar een traditionele kantine niet logisch is. Geen rij, geen kassapersoneel en de hele dag beschikbaar.</p><div><span class="pill">24/7 beschikbaar</span><span class="pill">Compact</span><span class="pill">Cashless</span><span class="pill">Vers assortiment</span></div></div></div></section>
-<section id="contact" class="cta"><h2>Een Smart Fridge op jouw locatie?</h2><p>We zoeken locaties voor de volgende uitrol.</p><a class="btn" href="mailto:info@smartfridges.nl">Neem contact op →</a></section>
-</main>
-<footer><div class="wrap">© 2026 Smart Fridges · Rotterdam</div></footer>
-</body></html>
+  <a class="skip-link" href="#main">Naar de inhoud</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="Smart Fridges, naar boven">Smart Fridges<span class="brand-dot" aria-hidden="true">.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span></button>
+    <nav id="navigation" aria-label="Hoofdnavigatie">
+      <a href="#how">Zo werkt het</a><a href="#locaties">Voor locaties</a><a href="#assortiment">Het assortiment</a>
+      <a class="nav-contact" href="#contact">Bespreek jouw locatie <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Slimmer eten op het werk</p><h1 id="hero-title">Grab<br>and go.</h1>
+        <p class="hero-subtitle">Verse, voedzame lunch<br class="desktop-break"> binnen handbereik.</p>
+        <p class="muted hero-description">Vers eten en drinken binnen handbereik.<br>Open de koelkast, pak wat je wilt en ga verder met je dag.</p>
+        <div class="actions"><a class="button" href="#contact">Smart Fridge op locatie</a><a class="button button-ghost" href="#how">Zo werkt het <span aria-hidden="true">↓</span></a></div>
+        <p class="hero-note">Voor werkplekken &amp; campussen</p>
+      </div>
+      <figure class="hero-media"><img src="assets/fridge-in-use.webp" width="1000" height="1250" alt="Conceptimpressie: een medewerker pakt een verse salade uit een Smart Fridge op kantoor" fetchpriority="high"><figcaption>Een verse pauze. Gewoon op je werk.</figcaption></figure>
+    </section>
+    <div class="benefit-band"><div class="wrap">
+      <ul class="benefits" aria-label="Voordelen van Smart Fridges">
+        <li><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><span>24/7 beschikbaar</span></li>
+        <li><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="1"/><path d="M6 9h12M9 5v2M9 12v3"/></svg><span>Compact</span></li>
+        <li><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="1"/><path d="M2 10h20M5 15h4"/></svg><span>Cashless</span></li>
+        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 3c1 11-4 19-12 15C1 11 9 3 20 3ZM6 21 16 9"/></svg><span>Vers assortiment</span></li>
+      </ul><p class="availability-note">Beschikbaar binnen de toegangstijden van je locatie.</p>
+    </div></div>
+    <section class="section wrap" id="locaties" aria-labelledby="location-title">
+      <div class="section-intro"><div><p class="eyebrow">Een goede plek voor goed eten</p><h2 id="location-title">Goede lunch, precies waar mensen zijn.</h2></div><div class="intro-text"><p>Smart Fridges brengt een compacte, onbemande foodservice naar locaties waar een traditionele kantine niet logisch is. Geen rij, geen kassapersoneel en de hele dag beschikbaar.</p><a class="text-link" href="#contact">Ontdek wat past bij jouw locatie <span aria-hidden="true">→</span></a></div></div>
+      <div class="location-grid">
+        <article class="location-card"><img src="assets/fridge-in-use.webp" class="office-crop" width="1000" height="1250" alt="Impressie van een Smart Fridge in een lichte kantoorruimte" loading="lazy"><p class="card-label">01 / Werkplekken</p><h3>Een lunchplek voor je team.</h3><p>Van een volle agenda naar een verse lunch. Een vertrouwde plek om iets te pakken, midden in de werkdag.</p><a class="text-link location-choice" href="#contact" data-location="Werkplek">Voor jouw werkplek <span aria-hidden="true">→</span></a></article>
+        <article class="location-card"><img src="assets/campus-lunch.webp" width="1400" height="933" alt="Conceptimpressie van studenten die samen lunchen aan een tafel op de campus" loading="lazy"><p class="card-label">02 / Campussen</p><h3>Even pauze tussen de colleges.</h3><p>Een lunch, snack of drankje dichtbij. Voor studenten en medewerkers met ieder hun eigen dagindeling.</p><a class="text-link location-choice" href="#contact" data-location="Campus">Voor jouw campus <span aria-hidden="true">→</span></a></article>
+        <article class="location-card"><img src="assets/fresh-lunch.webp" class="food-crop" width="1400" height="933" alt="Voorbeeld van een verse lunch met salade, brood en yoghurt" loading="lazy"><p class="card-label">03 / Gedeelde gebouwen</p><h3>Een voorziening die je deelt.</h3><p>Meerdere bedrijven, één plek voor iets lekkers. Verken een Smart Fridge in de gezamenlijke ruimte.</p><a class="text-link location-choice" href="#contact" data-location="Gedeeld gebouw">Voor jouw gebouw <span aria-hidden="true">→</span></a></article>
+      </div>
+    </section>
+    <section class="section how-section" id="how" aria-labelledby="how-title"><div class="wrap"><p class="eyebrow">Geen kassa. Geen wachtrij.</p><h2 id="how-title">Lunch pakken moet net zo makkelijk zijn als je koelkast thuis openen.</h2>
+      <ol class="steps">
+        <li><span class="step-number" aria-hidden="true">01</span><h3>Scan</h3><p>Scan de QR-code en identificeer jezelf in de Smart Fridges-app.</p></li>
+        <li><span class="step-number" aria-hidden="true">02</span><h3>Open</h3><p>De deur ontgrendelt zodra je account en betaalmethode gereed zijn.</p></li>
+        <li><span class="step-number" aria-hidden="true">03</span><h3>Pak</h3><p>Kies je lunch, snack of drankje direct uit de koelkast.</p></li>
+        <li><span class="step-number" aria-hidden="true">04</span><h3>Ga</h3><p>Sluit de deur. Je aankopen worden geregistreerd en afgerekend.</p></li>
+      </ol>
+    </div></section>
+    <section class="section wrap assortment" id="assortiment" aria-labelledby="food-title">
+      <figure class="food-media"><img src="assets/fresh-lunch.webp" width="1400" height="933" alt="Salade met groenten en granen, een belegd broodje en yoghurt met bessen op een houten tafel" loading="lazy"><figcaption>Een idee van wat er op het menu kan staan.</figcaption></figure>
+      <div class="food-copy"><p class="eyebrow">Van lunch tot tussendoor</p><h2 id="food-title">Goed eten.<br>Op jouw moment.</h2><p>Een salade voor de lunch. Yoghurt tussen twee afspraken. Iets fris voor onderweg. Een Smart Fridge maakt ruimte voor de kleine pauzes die je dag beter maken.</p><ul class="food-list"><li>Verse lunches &amp; belegde broodjes</li><li>Fruit, yoghurt &amp; snacks</li><li>Dranken voor elk pauzemoment</li></ul><p class="small muted">Dit zijn assortimentvoorbeelden. Het aanbod stemmen we af op de locatie en de gebruikers.</p><a class="text-link" href="#contact">Bespreek het assortiment <span aria-hidden="true">→</span></a></div>
+    </section>
+    <section class="section next-section" aria-labelledby="next-title"><div class="wrap next-layout">
+      <div><p class="eyebrow">Van idee naar locatie</p><h2 id="next-title">Laten we kijken<br>of het past.</h2><p class="muted">Je hoeft nog geen uitgewerkt plan te hebben. Een plek en een idee van de gebruikers zijn een goed begin.</p><a class="text-link" href="#contact">Bespreek jouw locatie <span aria-hidden="true">→</span></a></div>
+      <ol class="next-steps"><li><span aria-hidden="true">01</span><div><h3>Vertel ons over je locatie.</h3><p>Waar wil je de koelkast plaatsen en wie komen er eten?</p></div></li><li><span aria-hidden="true">02</span><div><h3>Bepaal samen de invulling.</h3><p>We bespreken de ruimte, het assortiment, bijvullen en beheer.</p></div></li><li><span aria-hidden="true">03</span><div><h3>Maak concrete afspraken.</h3><p>Vooraf duidelijkheid over kosten, verantwoordelijkheden en de mogelijke start.</p></div></li></ol>
+    </div></section>
+    <section class="section wrap faq-section" aria-labelledby="faq-title"><div><p class="eyebrow">Handig om te weten</p><h2 id="faq-title">Een paar goede vragen.</h2><a class="text-link" href="mailto:info@smartfridges.nl">Stel jouw vraag <span aria-hidden="true">↗</span></a></div><div class="faq-list">
+      <details><summary>Is mijn locatie geschikt?<span aria-hidden="true">+</span></summary><div><p>Smart Fridges richt zich op werkplekken en campussen. Ook een gedeeld gebouw kan interessant zijn. Of het past, hangt onder meer af van het aantal gebruikers, hun eetmomenten en de beschikbare plek. Vertel ons over jouw locatie, dan bekijken we de mogelijkheden samen.</p></div></details>
+      <details><summary>Wat kost een Smart Fridge op locatie?<span aria-hidden="true">+</span></summary><div><p>Er staat nog geen vast tarief op deze website. De kosten en afspraken hangen af van de invulling op jouw locatie. Vraag een gesprek aan om plaatsing, assortiment en beheer concreet te bespreken.</p><a class="text-link" href="#contact">Bespreek de mogelijkheden →</a></div></details>
+      <details><summary>Wie vult de koelkast bij?<span aria-hidden="true">+</span></summary><div><p>Bijvullen, voorraad, schoonmaak en service zijn onderdeel van de afspraken per locatie. We bespreken vooraf wie wat doet en hoe vaak, zodat de dagelijkse verantwoordelijkheden duidelijk zijn.</p></div></details>
+      <details><summary>Wat is er nodig voor plaatsing?<span aria-hidden="true">+</span></summary><div><p>Een geschikte binnenruimte met stroom en voldoende ruimte om de deur te openen. De benodigde aansluiting, verbinding, bereikbaarheid en exacte maatvoering controleren we samen voor plaatsing.</p></div></details>
+      <details><summary>Is de koelkast echt 24/7 beschikbaar?<span aria-hidden="true">+</span></summary><div><p>Er is geen kassapersoneel nodig om iets te pakken. Gebruikers kunnen terecht zolang ze toegang hebben tot de locatie. In een gebouw dat dag en nacht toegankelijk is, kan de koelkast dus ook dag en nacht beschikbaar zijn.</p></div></details>
+      <details><summary>Hoe werkt betalen?<span aria-hidden="true">+</span></summary><div><p>Je scant de QR-code en maakt je account en betaalmethode gereed. Daarna open je de deur en pak je wat je wilt. Als je de deur sluit, worden je aankopen geregistreerd en afgerekend.</p></div></details>
+    </div></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-layout">
+      <div class="contact-copy"><p class="eyebrow">Voor de volgende uitrol</p><h2 id="contact-title">Een Smart Fridge op jouw locatie?</h2><p>We zoeken locaties voor de volgende uitrol.</p><p>Vertel ons waar je aan denkt. Dan hebben we een goed vertrekpunt voor een gesprek.</p><a class="contact-email" href="mailto:info@smartfridges.nl">info@smartfridges.nl <span aria-hidden="true">↗</span></a></div>
+      <div class="contact-form-area">
+        <form id="location-form" hidden><p class="form-heading">Begin met jouw locatie.</p>
+          <fieldset><legend>Wat voor locatie heb je?</legend><div class="location-options">
+            <label><input type="radio" name="locationType" value="Werkplek" checked><span>Werkplek</span></label><label><input type="radio" name="locationType" value="Campus"><span>Campus</span></label><label><input type="radio" name="locationType" value="Gedeeld gebouw"><span>Gedeeld gebouw</span></label><label><input type="radio" name="locationType" value="Anders"><span>Anders</span></label>
+          </div></fieldset>
+          <div class="form-row"><div class="field"><label for="people">Hoeveel mensen zijn er dagelijks?</label><select id="people" name="people" required><option value="">Kies een aantal</option><option>Minder dan 25</option><option>25–50</option><option>51–100</option><option>101–250</option><option>Meer dan 250</option><option>Nog niet bekend</option></select></div><div class="field"><label for="place">Naam of plaats van de locatie</label><input id="place" name="place" type="text" maxlength="120" autocomplete="organization" placeholder="Bijv. kantoor in Rotterdam" required></div></div>
+          <div class="field"><label for="message">Wat wil je ons meegeven? <span class="optional">(optioneel)</span></label><textarea id="message" name="message" maxlength="1000" rows="3" placeholder="Bijvoorbeeld jullie lunchwensen of een beoogde startdatum."></textarea></div>
+          <div class="actions"><button class="button" type="submit">Maak mijn aanvraag <span aria-hidden="true">→</span></button><a class="button button-ghost" href="mailto:info@smartfridges.nl">Liever direct mailen</a></div><p class="form-note">Je bekijkt eerst je aanvraag. Daarna open je de e-mail om hem zelf te versturen.</p><p class="privacy-note">Deze locatiecheck slaat je gegevens niet op en verstuurt niets automatisch.</p>
+        </form>
+        <div id="request-review" hidden tabindex="-1" aria-labelledby="review-title"><p class="form-heading" id="review-title">Je aanvraag staat klaar.</p><p class="review-description">Controleer je gegevens en verstuur de aanvraag via je eigen mailprogramma.</p><div class="request-summary"><dl><div><dt>Locatie</dt><dd id="review-place"></dd></div><div><dt>Type</dt><dd id="review-type"></dd></div><div><dt>Gebruikers per dag</dt><dd id="review-people"></dd></div></dl><p id="review-message"></p></div><div class="actions"><a class="button" id="send-request" href="mailto:info@smartfridges.nl">Open e-mail met aanvraag <span aria-hidden="true">↗</span></a><button class="button button-ghost" id="edit-request" type="button">Pas aan</button></div><p class="form-note">Klik in je mailprogramma op ‘Versturen’ om de aanvraag te verzenden.</p><p class="mail-fallback">Geen mailprogramma? <button id="copy-request" class="inline-button" type="button">Kopieer je aanvraag</button> en mail hem naar <a href="mailto:info@smartfridges.nl">info@smartfridges.nl</a>.</p><p id="copy-status" role="status"></p><textarea id="copy-manually" class="copy-manually" aria-label="Selecteer en kopieer je aanvraag" rows="8" readonly hidden></textarea></div>
+        <noscript><p>Mail jouw type locatie, plaats en het aantal gebruikers naar <a href="mailto:info@smartfridges.nl">info@smartfridges.nl</a>. De locatiecheck werkt met JavaScript.</p></noscript>
+      </div>
+    </div><footer class="wrap footer"><a href="#" class="brand">Smart Fridges.</a><p>© 2026 Smart Fridges · Rotterdam</p><a href="mailto:info@smartfridges.nl">Neem contact op <span aria-hidden="true">↗</span></a><p class="image-note">Beelden zijn conceptimpressies. Het getoonde assortiment is ter illustratie.</p></footer></section>
+  </main>
+</body>
+</html>
